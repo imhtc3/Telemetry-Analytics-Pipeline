@@ -49,8 +49,4 @@ Or with Docker: `docker build -t telemetry . && docker run telemetry`
 - **Composite indexes chosen from the queries**: `(date_key, event_type)` serves dashboard filters; `(event_type, platform_key, latency_ms)` is a covering index for the latency aggregate.
 - **SQLite** keeps it runnable anywhere; the same DDL ports to PostgreSQL or Azure SQL.
 
-## Next steps
 
-- Swap pandas for PySpark to process partitioned files in parallel
-- Schedule with Airflow or Azure Data Factory
-- Load into PostgreSQL / Azure SQL and add a Power BI dashboard
